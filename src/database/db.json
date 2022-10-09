@@ -85,6 +85,24 @@
       "id": "35a88c42-b676-428f-aacf-62011636fec5",
       "createdAt": "10/3/2022, 3:29:52 AM",
       "updatedAt": "10/3/2022, 3:29:52 AM"
+    },
+    {
+      "name": "Squats",
+      "mode": "AMRAP 20",
+      "equipment": [
+        "rack",
+        "barbell",
+        "abmat"
+      ],
+      "exercises": [
+        "30 abmat sit-ups"
+      ],
+      "trainserTips": [
+        "Perform 30 sit-ups"
+      ],
+      "id": "8a82b16e-2292-44e8-b6ed-0c7c813b2b8a",
+      "createdAt": "10/9/2022, 4:48:40 PM",
+      "updatedAt": "10/9/2022, 4:48:40 PM"
     }
   ]
 }

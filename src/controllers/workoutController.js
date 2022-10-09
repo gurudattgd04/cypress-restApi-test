@@ -6,8 +6,14 @@ const getAllWorkouts = (req, res) => {
 };
 
 const getOneWorkout = (req, res) => {
-  workoutService.getOneWorkout();
-  res.send("Get an existing workout");
+  const {
+    params: { workoutId },
+  } = req;
+  if (!workoutId) {
+    return;
+  }
+  const workout = workoutService.getOneWorkout(workoutId);
+  res.send({ status: "OK", data: workout });
 };
 
 const createNewWorkout = (req, res) => {
@@ -20,6 +26,12 @@ const createNewWorkout = (req, res) => {
     !body.exercises ||
     !body.trainerTips
   ) {
+    res.status(400).send({
+      status: "FAILED",
+      data: {
+        error: "One of the required key is missing in the request body",
+      },
+    });
     return;
   }
   const newWorkout = {

@@ -11,9 +11,24 @@ const createNewWorkout = (newWorkout) => {
   if (isAlreadyAdded) {
     return;
   }
-  DB.workouts.push(newWorkout);
-  saveToDatabase(DB);
-  return newWorkout;
+  try {
+    DB.workouts.push(newWorkout);
+    saveToDatabase(DB);
+    return newWorkout;
+  } catch (error) {
+    throw { status: 500, message: error.message || error };
+  }
 };
 
-module.exports = { getAllWorkouts, createNewWorkout };
+const getOneWorkout = (workoutId) => {
+  console.log("workout is:", workoutId);
+  console.log(DB.workouts);
+  const workout = DB.workouts.find((workout) => workout.id === workoutId);
+  if (!workoutId) {
+    return;
+  }
+  console.log("workout is:", workout);
+  return workout;
+};
+
+module.exports = { getAllWorkouts, createNewWorkout, getOneWorkout };
