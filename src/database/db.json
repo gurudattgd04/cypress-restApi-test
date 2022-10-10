@@ -103,6 +103,50 @@
       "id": "8a82b16e-2292-44e8-b6ed-0c7c813b2b8a",
       "createdAt": "10/9/2022, 4:48:40 PM",
       "updatedAt": "10/9/2022, 4:48:40 PM"
+    },
+    {
+      "name": "Squats-1",
+      "mode": "AMRAP 20",
+      "equipment": [
+        "rack",
+        "barbell",
+        "abmat"
+      ],
+      "exercises": [
+        "15 toes to bars",
+        "10 thrusters",
+        "30 abmat sit-ups"
+      ],
+      "trainserTips": [
+        "Split your toes to bars into two sets maximum",
+        "Go unbroken on the thrusters",
+        "Take the abmat sit-ups as a chance to normalize your breath"
+      ],
+      "id": "00c78d57-48a2-48b3-ab71-50b531dba41b",
+      "createdAt": "10/10/2022, 2:31:51 PM",
+      "updatedAt": "10/10/2022, 2:31:51 PM"
+    },
+    {
+      "name": "Squats-2",
+      "mode": "AMRAP 20",
+      "equipment": [
+        "rack",
+        "barbell",
+        "abmat"
+      ],
+      "exercises": [
+        "15 toes to bars",
+        "10 thrusters",
+        "30 abmat sit-ups"
+      ],
+      "trainserTips": [
+        "Split your toes to bars into two sets maximum",
+        "Go unbroken on the thrusters",
+        "Take the abmat sit-ups as a chance to normalize your breath"
+      ],
+      "id": "6ccdf8a0-e5f5-4983-beac-c4dcfac7afd0",
+      "createdAt": "10/10/2022, 2:36:15 PM",
+      "updatedAt": "10/10/2022, 2:36:15 PM"
     }
   ]
 }

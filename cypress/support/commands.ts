@@ -35,3 +35,4 @@
 //     }
 //   }
 // }
+chai.config.truncateThreshold = 4;
